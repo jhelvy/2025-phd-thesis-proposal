@@ -1,0 +1,6 @@
+```{r}
+#| label: setup-study-2
+#| include: false
+library(tidyverse)
+library(kableExtra)
+```
