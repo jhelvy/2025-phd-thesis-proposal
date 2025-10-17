@@ -4,3 +4,32 @@
 library(tidyverse)
 library(kableExtra)
 ```
+
+## Continuing from Study 1... {.smaller}
+
+- Benefits of smart charging are limited by different factors.
+- Smart charging programs should be cost-effective.
+- For grid: costs for generation and incentives.
+- For EV owners: compromising mobility in exchange for incentives.
+
+## Research Questions {style="line-height: 2;"}
+
+1. What are the cost-benefit trade-offs for utilities implementing these programs?
+
+2. How do these trade-offs vary across different locations?
+
+<br>
+
+::: {.centered-text .container}
+Data collecton on NHTS trip and NREL electricity consumption.
+:::
+
+::: {.centered-text .container}
+Simulation of peak-shaving in all 18 GEA regions across the U.S., in combination with enrollment rates from Study 1.
+:::
+
+## Data Collection - NHTS Trip Data
+
+- 2022 National Household Travel Survey (NHTS).
+- 300,000+ households, 150,000+ vehicles.
+- Trip-level data: start/end time, distance, purpose, etc.

@@ -1,5 +1,7 @@
 ## <span style="color: #FFB84D;">Study 1</span><br><br>Electric Vehicle Smart Charging Adoption {.dark-centered .center}
 
+Under review at *IOP - Environmental Research Letters*.
+
 {{< include /study-1.qmd >}}
 
 ## <span style="color: #FFB84D;">Study 2</span><br><br>Smart Charging Economy {.dark-centered .center}
@@ -7,6 +9,8 @@
 {{< include /study-2.qmd >}}
 
 ## <span style="color: #FFB84D;">Study 3</span><br><br>The `surveydown` Survey Platform {.dark-centered .center}
+
+Published in *PLoS ONE*.
 
 {{< include /study-3.qmd >}}
 
