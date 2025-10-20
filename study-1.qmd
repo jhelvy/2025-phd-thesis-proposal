@@ -106,7 +106,7 @@ In order to answer these questions, we designed a conjoint survey to collect BEV
 <br>
 <br>
 
-::: {.columns }
+::: {.columns}
 ::: {style="text-align: center;" .column .fragment}
 ### Conjoint Questions {style="text-align: center; font-size: 36px; color: #739C69;"}
 1. Monetary Incentives
