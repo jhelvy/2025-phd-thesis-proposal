@@ -1,3 +1,27 @@
+## Introduction {.smaller}
+
+**Background:**
+
+- Electrified transportation reduces GHG emissions and fossil fuel use.
+- BEV adoption creates new electricity demand that must be managed.
+
+**The Challenge:**
+
+- Charging timing can strain grid or provide flexibility services.
+- Gaps in understanding: consumer preferences, program design, cost-effectiveness.
+
+**This Dissertation:**
+
+Combines consumer research, systems analysis, and methodological innovation to address these gaps.
+
+## Three Interconnected Studies
+
+**Study 1:** Consumer preferences for SMC and V2G programs (N=1,356 BEV owners).
+
+**Study 2:** Cost-effectiveness framework for SMC programs with realistic enrollment costs.
+
+**Study 3:** **surveydown**—open-source platform for complex, reproducible surveys.
+
 ## <span style="color: #FFB84D;">Study 1</span><br><br>Electric Vehicle Smart Charging Adoption {.dark-centered .center}
 
 Under review at *IOP - Environmental Research Letters*.
@@ -13,5 +37,15 @@ Under review at *IOP - Environmental Research Letters*.
 Published in *PLoS ONE*.
 
 {{< include /study-3.qmd >}}
+
+## Research Contributions
+
+- **Study 1:** Quantifies preferences of 1,356 BEV owners—SMC participants value flexibility and recurring payments; V2G supporters prefer monetary incentives.
+
+- **Study 2:** Develops cost-effectiveness framework showing peak load will be largely shaved and grids benefit from reduced costs during low-demand periods.
+
+- **Study 3:** Introduces **surveydown**, an open-source platform enabling programmable, reproducible surveys for complex research.
+
+**Conclusion:** Together, these studies inform utility program design and policy development, advancing both BEV grid integration and transportation electrification research methods.
 
 ## Reference List
