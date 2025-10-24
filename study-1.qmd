@@ -5,63 +5,6 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-## EV sales in US reaching ~10% of sales {style="text-align: center;"}
-
-![](/figs/study-1/ev_sales_us.png){fig-align="center" width="80%"}
-
-::: {style="width: 80%; margin: 0 auto; text-align: right; font-size: 24px;"}
-Source: Argonne National Lab, [www.anl.gov/ev-facts/model-sales](https://www.anl.gov/ev-facts/model-sales)
-:::
-
-## Introduction {.smaller}
-
-- **Unmanaged** BEV charging is becoming a problem to the grid.
-- **Managed** charging is cheaper and smoothes out the grid load.
-- **Smart** charging: Supplier-Managed Charging (SMC) and Vehicle-to-Grid (V2G).
-
-![](/figs/study-1/smart_charging.png){fig-align="center" width="65%"}
-
-::: {.notes}
-Unmanaged BEV charging is becoming a problem to the grid due to the spike. That's why we need managed charging to smoothes out the grid load as well as keep the price low.
-
-Smart charging is a type of managed charging, which includes Supplier-Managed Charging, shortened as SMC, and Vehicle-to-Grid, shortened as V2G.
-:::
-
-## SMC - Supplier Managed Charging
-
-- SMC smooths out overnight EV charging demand.
-- Electricity demand is controlled below capacity threshold.
-- It saves money and reduces pollution.
-
-![](/figs/study-1/education_1_half.png){fig-align="center"}
-
-::: {.notes}
-For SMC, Supplier-Managed Charging, it smooths out the overnight EV charging demand.
-
-As you can see, with unmanaged charging, the BEV load easily passes over the capacity threshold.
-:::
-
-## SMC - Supplier Managed Charging
-
-- SMC smooths out overnight EV charging demand.
-- Electricity demand is controlled below capacity threshold.
-- It saves money and reduces pollution.
-
-![](/figs/study-1/education_1.png){fig-align="center"}
-
-::: {.notes}
-But with SMC, the electricity demand is controlled below the threshold. It reduces the peak demand and saves money.
-:::
-
-## V2G - Vehicle-to-Grid
-
-![](/figs/study-1/education_2.png){fig-align="center" width="70%"}
-
-::: {.notes}
-V2G is short for Vehicle-to-Grid. It is another type of smart charging that allows BEV owners to sell electricity back to the grid. With V2G, BEVs become potential sources of electricity.
-:::
-
-## [Smart charging depends on enrollment.]{style="text-align: center; display: block;"} {.center}
 
 ## Literature Review
 
@@ -71,7 +14,7 @@ V2G is short for Vehicle-to-Grid. It is another type of smart charging that allo
 
 None of them have demographics data to study <span style="color: #739C69">heterogeneity</span>.
 
-::: {.centered-text .container}
+::: {.centered-container}
 We need high EV ownership & large sample size, and consider heterogeneity.
 :::
 
@@ -87,11 +30,11 @@ There's been a few studies that looked on people's willingness to participate to
 
 <br>
 
-::: {.centered-text .container}
+::: {.centered-container}
 **Conjoint survey** to collect BEV owners' willingness.
 :::
 
-::: {.centered-text .container}
+::: {.centered-container}
 **Multinomial logit model** for utility simulations.
 :::
 
@@ -354,7 +297,7 @@ Other than the BEV models, there are also some important demographics informatio
 ## Survey Results - Willingness to Participate {.smaller}
 
 ::: {.fragment}
-### Multinomial Logit Models {style="text-align: center; font-size: 36px; color: #739C69;"}
+### Mixed Logit Models {style="text-align: center; font-size: 32px; color: #739C69;"}
 
 $$
 \begin{align*}
@@ -373,13 +316,13 @@ Utility esimated using maximum likelihood estimation (MLE).
 ::: {.column style="padding-top: 0.5em;"}
 ### SMC Estimates {style="text-align: center; font-size: 24px; color: #739C69;"}
 
-![](/figs/study-1/smc_mnl_plot.png){fig-align="center"}
+![](/figs/study-1/smc_mxl_plot.png){fig-align="center"}
 :::
 
 ::: {.column style="padding-top: 0.5em;"}
 ### V2G Estimates {style="text-align: center; font-size: 24px; color: #739C69;"}
 
-![](/figs/study-1/v2g_mnl_plot.png){fig-align="center"}
+![](/figs/study-1/v2g_mxl_plot.png){fig-align="center"}
 :::
 :::
 
