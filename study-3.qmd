@@ -4,11 +4,11 @@
 source("scripts.R")
 ```
 
-## {.light-centered .center}
+## Typical Web Survey {.light-centered .center}
 
-![](/figs/study-3/demo.gif){fig-align="center" width="85%" .purple-border}
+![](/figs/study-3/demo.gif){fig-align="center" width="80%" .purple-border}
 
-## WYSIWYG Interface {.light-centered .center}
+## Google Form WYSIWYG Interface {.light-centered .center}
 
 ![](/figs/study-3/google-form.png){fig-align="center" width="90%"}
 
@@ -59,7 +59,14 @@ source("scripts.R")
 ::: {.fragment}
 ❌ Open source
 :::
+:::
 
+## Qualtrics Market Share {.light-centered .center}
+
+![](/figs/study-3/qualtrics-market-share.png){fig-align="center" width=100% .purple-border}
+
+::: {.fragment style="font-size: 50px;"}
+Expensive!
 :::
 
 ## {.dark-centered .center}
@@ -88,6 +95,8 @@ source("scripts.R")
 
 ✅ Open source
 
+✅ Free!
+
 :::
 
 ## Introducing `surveydown`! {.dark-centered .center style="font-size: 1.2em;"}
@@ -95,8 +104,6 @@ source("scripts.R")
 <br>
 
 ![](/figs/study-3/logo-surveydown.png){fig-align="center" width=300}
-
-## What is `surveydown`? {.dark-centered .center style="font-size: 1.2em;"}
 
 ## R package that renders <span style="color: #2C8475;">Quarto</span> files into <span style="color: #2C8475;">surveys</span> {.light-centered .center}
 
@@ -369,21 +376,13 @@ surveycode("18,20,21,22")
 
 ## {.light-centered .center}
 
-![](/figs/study-3/what-is-surveydown.png){width=100%}
-
-## {.light-centered .center}
-
-![](/figs/study-3/what-is-surveydown-2.png){width=100%}
-
-## {.light-centered .center}
-
 ![](/figs/study-3/what-is-surveydown-3.png){width=100%}
 
 ## A complete `surveydown` survey {.light-centered .center}
 
 <br>
 
-::: {.fragment .column style="width: 48%;"}
+::: {.column style="width: 48%;"}
 `survey.qmd`
 
 A **Quarto doc** defining the survey content (pages, texts, images, questions, etc).
@@ -392,55 +391,10 @@ A **Quarto doc** defining the survey content (pages, texts, images, questions, e
 ::: {.column width="4%"}
 :::
 
-::: {.fragment .column style="width: 48%;"}
+::: {.column style="width: 48%;"}
 `app.R`
 
 An **R script** defining the survey Shiny app.
-:::
-
-## {style="font-size: 0.9em;"}
-
-::: {.column width="60%"}
-
-### `app.R` {style="text-align: center;"}
-
-<br>
-
-```{r}
-#| results: 'asis'
-appcode_short()
-```
-
-:::
-
-## {style="font-size: 1em;"}
-
-::: {.column style="width: 60%; font-size: 0.9em;"}
-
-### `app.R` {style="text-align: center;"}
-
-<br>
-
-```{r}
-#| results: 'asis'
-appcode_short("3,7")
-```
-
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column style="width: 36%; font-size: 0.7em;"}
-
-::: {.bubble-left style="display: block; transform: none; top: 22%;"}
-Render `survey.qmd` as UI
-:::
-
-::: {.bubble-left style="display: block; transform: none; top: 37%;"}
-Run the `surveydown` server
-:::
-
 :::
 
 ## PostgreSQL for response <span style="color: #FFB84D;">data</span> storage. {.dark-centered .center}
@@ -453,49 +407,9 @@ Run the `surveydown` server
 
 ![](/figs/study-3/supabase-table.png){width=100%}
 
-##
-
-::: {.column style="width: 58%; font-size: 0.9em;"}
-
-### `app.R` {style="text-align: center;"}
+## Technologies of `surveydown` {.light-centered .center}
 
 <br>
-
-```{r}
-#| results: 'asis'
-appcode_long("3,4,10")
-```
-
-:::
-
-::: {.column width="2%"}
-:::
-
-::: {.column style="width: 40%; font-size: 0.7em;"}
-
-::: {.bubble-left style="display: block; transform: none; top: 21%;"}
-Store credentials
-
-Connect to the database
-:::
-
-::: {.bubble-left style="display: block; transform: none; top: 47%;"}
-Pass connection to `sd_server()`
-:::
-
-:::
-
-## {.light-centered .center}
-
-![](/figs/study-3/get-data.png){width=100%}
-
-## What is `surveydown`? {.dark-centered .center style="font-size: 1.2em;"}
-
-<br>
-
-![](/figs/study-3/logo-surveydown.png){fig-align="center" width=300}
-
-## {.light-centered .center}
 
 ![](/figs/study-3/technologies.svg){fig-align="center" width=100%}
 
@@ -690,4 +604,10 @@ Condition ~ Target
 
 ![](/figs/study-3/sdstudio-data.gif){fig-align="center" width=100% .purple-border}
 
-## [**surveydown.org**](https://surveydown.org) {.light-centered .center style="font-size: 1.2em;"}
+## `surveydown` vs other platforms {.light-centered .center}
+
+<br>
+
+![](/figs/study-3/comparisons.png){fig-align="center" width=100% .purple-border}
+
+## [**surveydown.org**](https://surveydown.org) {.dark-centered .center style="font-size: 1.2em;"}

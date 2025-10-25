@@ -61,7 +61,7 @@ V2G is short for Vehicle-to-Grid. It is another type of smart charging that allo
 <br>
 
 ::: {.fragment}
-#### <span style="color: #2C8475;">Survey Research</span> {style="text-align: center;"}
+#### <span style="color: #2C8475;">Survey Research & Modeling</span> {style="text-align: center;"}
 
 ::: {.centered-container style="width: 900px;"}
 Consumer preferences on smart charging adoption.
@@ -70,7 +70,7 @@ Consumer preferences on smart charging adoption.
 
 <br>
 
-::: {.fragment .column width="46%"}
+::: {.fragment .column width="48%"}
 #### <span style="color: #2C8475;">Simulation Research</span>
 
 ::: {.centered-container style="width: 500px;"}
@@ -78,11 +78,11 @@ Quantify grid supply curves to achieve peak-shaving.
 :::
 :::
 
-::: {.column width="8%"}
+::: {.column width="4%"}
 :::
 
 
-::: {.fragment .column width="46%"}
+::: {.fragment .column width="48%"}
 #### <span style="color: #2C8475;">App Development</span> 
 
 ::: {.centered-container style="width: 500px;"}
@@ -108,12 +108,14 @@ Published in *PLoS ONE*.
 
 ## Research Contributions
 
-- **Study 1:** Quantifies preferences of 1,356 BEV owners—SMC participants value flexibility and recurring payments; V2G supporters prefer monetary incentives.
+- **Study 1:** First *large N* study of consumer sensitivities to smart charging. Introduces *attribute equivalencies* for incentive design.
+- **Study 2:** Quantifies supply curves for *peak-shaving*, considering regions, seasons, EV-to-house ratios, and enrollment rates.
+- **Study 3:** `surveydown`, a free open-source survey platform for programmable, reproducible survey designs.
 
-- **Study 2:** Develops cost-effectiveness framework showing peak load will be largely shaved and grids benefit from reduced costs during low-demand periods.
+I start with a survey research on smart charging, followed by a nation-wide grid simulation, and a survey software.
 
-- **Study 3:** Introduces **surveydown**, an open-source platform enabling programmable, reproducible surveys for complex research.
+I hope these studies could benefit sustainable transportation, and give persistent contributions for future research.
 
-**Conclusion:** Together, these studies inform utility program design and policy development, advancing both BEV grid integration and transportation electrification research methods.
+## Thanks for listening! {.dark-centered .center}
 
 ## Reference List
