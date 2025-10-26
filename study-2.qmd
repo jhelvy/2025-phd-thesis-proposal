@@ -5,114 +5,98 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-## Continuing from Study 1... {.smaller}
-
-- Benefits of smart charging are limited by different factors.
-- Smart charging programs should be cost-effective.
-- For utilities: costs for generation and incentives.
-- For EV owners: compromising mobility in exchange for incentives.
-
 ## Research Questions {style="line-height: 2;"}
 
-1. What are the cost-benefit trade-offs for utilities implementing these programs?
+1. **Peak-shaving**: How are supply curves quantified to achieve peak-shaving?
 
-2. How do these trade-offs vary across different locations?
+2. **Variations:** How do peak-shaving results change based on regions, seasons, EV-to-house ratios, and enrollment rates.
 
 <br>
 
-::: {.centered-text .container}
-Data collecton on NHTS trip and NREL electricity consumption.
+::: {.centered-container}
+**Data collection** from NHTS, NREL, and U.S. Census.
 :::
 
-::: {.centered-text .container}
-Simulation of peak-shaving in all 18 GEA regions across the U.S., in combination with enrollment rates from Study 1.
+::: {.centered-container}
+Peak-shaving **simulation** using model from study 1.
 :::
 
-## Recall the Load Shifting from Study 1
+## Plan of Action {.smaller}
 
-![](/figs/study-1/education_1_half.png){fig-align="center" width="80%"}
+### Step 1: Data Collection {style="font-size: 32px; color: #739C69;"}
+- **NHTS** trip data: EV usage and charging patterns
+- **NREL** Cambium data: Household electricity consumption
+- **U.S. Census**: Count of single family households
+- **Study 1**: MXL model of SMC enrollment utilities
 
-## Plan of Action
+### Step 2: Simulation {style="font-size: 32px; color: #739C69;"}
+- Original grid consumption profiles
+- A variety of peak-shaved grid consumption profiles
 
-### Step 1: Data Collection
-- EV charging from **NHTS** trip date
-- Household electricity consumption from **NREL** Cambium data
-- Count of single family households from **U.S. Census**
-- SMC enrollment rates vs incentives from **Study 1**
+### Step 3: Sensitivity Analysis {style="font-size: 32px; color: #739C69;"}
+- Compare the peak-shaving results of different scenarios.
+- Summarize and provide policy implications.
 
-### Step 2: Simulation
-- Original consumption profile
-- Shifted consumption profile with peak-shaving
+## NHTS Trip Data {.dark-centered .center}
 
-### Step 3: Cost-Benefit Analysis
-- For utilities: if electricity generation savings outweigh the incentives offered
-- For EV owners: the sweet point between mobility compromise and incentives
+## Simulated EV Charging Profile {.light-centered}
 
-## Data Collection - NHTS Trip Data
+![](/figs/study-2/ev_charging_profile.png){fig-align="center" width=85% .purple-border}
 
-- 2022 National Household Travel Survey (NHTS).
-- 300,000+ households, 150,000+ vehicles.
-- Trip-level data: start/end time, distance, purpose, etc.
+::: {style="font-size: 32px;"}
+Energy consumption and concurrent charging % of 10,000 EVs.
+:::
 
-## Simulated EV Charging Profile
+## NREL Household Electricity Consumption {.dark-centered .center}
 
-![](/figs/study-2/ev_charging_profile.png){fig-align="center" width="80%"}
+## 18 GEA Regions {.light-centered}
 
-## Data Collection - NREL Electricity Consumption
+![](/figs/study-2/gea_map.png){fig-align="center" width="90%"}
 
-- 2024 Cambium Scenario Data by NREL.
-- Hourly U.S. grid projections through 2050.
-- Includes emissions, costs, and generation mix across scenarios.
+## CAISO as an Example {.light-centered}
 
-## 18 GEA Regions
+![](/figs/study-2/caiso_nrel.png){fig-align="center" width=100% .purple-border}
 
-![](/figs/study-2/gea_map.png){fig-align="center" width="80%"}
+::: {style="font-size: 32px;"}
+7.69M single families, collected from U.S. Census.
+:::
 
-## CAISO as an Example
+## Peak-shaving Simulation {.dark-centered .center}
 
-- 7.69M single families, collected from U.S. Census.
+## Original Consumption Profile {.light-centered}
 
-![](/figs/study-2/caiso_nrel.png){fig-align="center" width="80%"}
+![](/figs/study-2/caiso_profile_1.png){fig-align="center" width=85% .purple-border}
 
-## Simulation - Original Consumption Profile
+## Shifted Consumption with Peak-shaving {.light-centered}
 
-![](/figs/study-2/caiso_profile_1.png){fig-align="center" width="80%"}
+![](/figs/study-2/caiso_profile_2.png){fig-align="center" width=85% .purple-border}
 
-## Simulation - Shifted Consumption Profile
+::: {style="font-size: 32px;"}
+60% SMC enrollment, EV-to-house ratio 1:4.
+:::
 
-- 25% EV ownership. 60% SMC enrollment.
-- Peak-shaving from 10AM-12:00AM to 12:00AM-7AM.
-- Override enabled: if SMC will fail the trip, no shifting.
+## MXL Model of Monthly Incentives {.light-centered}
 
-![](/figs/study-2/caiso_profile_2.png){fig-align="center" width="80%"}
+![](/figs/study-2/smc_monthly_sens_plot.png){fig-align="center" width="90%" .purple-border}
 
-## Simulation in Progress...
+## EV Peak Increase <span style="color: #ED6D46;">vs</span> Monthly Incentives
 
-- All 18 GEA regions.
-- Varying EV ownership rates (25%, 50%, 100%).
+![](/figs/study-2/ev_peak_increase_and_cost.png){fig-align="center" width="85%" .purple-border}
+
+::: {style="font-size: 32px;"}
+More incentives lead to higher SMC enrollment, thus more peak shaving.
+:::
+
+## Sensitivity Analysis {.dark-centered .center}
+
+## Different Scenarios {.light-centered .center}
+
+- All 18 GEA regions in all 4 seasons.
+- Varying EV-to-house ratios (1:4, 1:2, 1:1).
 - Varying SMC enrollment rates (from 0% to 100%).
 - Varying peak-shaving "from" and "to" windows.
 
-## Cost-Benefit of Utilities
+## Policy Implications {.light-centered .center}
 
-**Costs** on incentives should be smaller than **savings** on reduced generation during valley hours.
-
-## Sensitivity Analysis of Monthly Incentives
-
-- A rough MNL (Multinomial Logit) model analysis based on Study 1 results.
-- Will shift to MXL (Mixed Logit) model.
-
-![](/figs/study-2/smc_monthly_sens_plot.png){fig-align="center" width="80%"}
-
-## EV Peak Increase Shaving vs Monthly Incentives
-
-- More incentives lead to higher SMC enrollment, thus more peak shaving.
-
-![](/figs/study-2/ev_peak_increase_and_cost.png){fig-align="center" width="80%"}
-
-## Upcoming Work...
-
-- Finish simulations across all GEA regions.
-- Finalize MXL model for SMC enrollment rates.
-- Complete cost-benefit analysis for utilities and EV owners.
-- Prepare manuscript for submission.
+1. Utilities must plan a budget that scales with enrollment levels.
+2. Governments could provide subsidies to offset the cost.

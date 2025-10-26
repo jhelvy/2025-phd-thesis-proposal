@@ -8,7 +8,7 @@ source("scripts.R")
 
 ![](/figs/study-3/demo.gif){fig-align="center" width="80%" .purple-border}
 
-## Google Form WYSIWYG Interface {.light-centered .center}
+## Google Form - GUI Interface {.light-centered .center}
 
 ![](/figs/study-3/google-form.png){fig-align="center" width="90%"}
 
@@ -61,7 +61,7 @@ source("scripts.R")
 :::
 :::
 
-## Qualtrics Market Share {.light-centered .center}
+## Qualtrics - Commercial Platform {.light-centered .center}
 
 ![](/figs/study-3/qualtrics-market-share.png){fig-align="center" width=100% .purple-border}
 

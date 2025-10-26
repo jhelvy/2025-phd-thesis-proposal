@@ -5,7 +5,6 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-
 ## Literature Review
 
 1. A study by @wong_incentives_2023 examined **incentives** affect the EV owners' acceptance, <span style="color: #739C69">but EV ownership is only 19%</span>.
